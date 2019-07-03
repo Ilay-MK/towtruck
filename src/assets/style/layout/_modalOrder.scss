@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+#modalOrder {
+    color: map-get($colors, "cn");
+
+    .modal {
+
+        &-content {
+
+            background-color: map-get($colors, "cb");
+            border-radius: 12px;
+            max-width: 424px;
+            /*848px;*/
+            padding: 0 24px;
+            /*0 49px*/
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        &-header {
+            border-bottom: 0px solid transparent;
+            background: none;
+            margin-top: 28px;
+            /*57px*/
+
+            h4.modal-title {
+                color: #544742;
+                font-size: 19px;
+                margin-left: 5px;
+                text-transform: uppercase;
+            }
+        }
+
+        &-footer {
+            border-top: 0px solid transparent;
+            background: none;
+            margin: 0 -24px;
+            /*0 -49px*/
+            padding: 0 15px;
+            text-align: center;
+
+            .col {
+                margin: 0;
+                padding: 0;
+            }
+
+            &-btn {
+                @extend %font-heading;
+                border-radius: 0;
+                font-size: 11px;
+                font-weight: 400;
+                letter-spacing: 0.25px;
+                padding: 14px 6px;
+                /*28px 12px*/
+                width: 100%;
+            }
+
+            .phone {
+                /*border-radius: 0 0 0 12px;*/
+                color: #7f828b;
+                transition: all 300ms ease;
+            }
+
+            .btn {
+
+                &-v9 {
+                    background-color: transparent;
+                    /*border-radius: 0 0 12px 0;*/
+                    color: #7f828b;
+                    text-transform: uppercase;
+                    transition: all 300ms ease;
+                }
+            }
+
+            .bg_h {
+                background-color: map-get($colors, "bg1");
+                color: map-get($colors, "cb");
+            }
+        }
+    }
+}

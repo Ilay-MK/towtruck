@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+#carpark {
+
+    .title h2 {
+        margin-left: -1px;
+    }
+
+    .tiles {
+        /*margin-right: -17px;
+        margin-left: -17px;*/
+    }
+
+    .r, .col {
+        /*margin: 0;
+        padding: 0;*/
+    }
+
+    .car {
+        @extend %bg-cover;
+        /*background-image: url(../img/carpark/carpark.jpg);*/
+        /*background-position: 0 0;*/
+
+        /*background-image: url(../img/carpark/1.jpg);*/
+        border: 2px solid transparent;
+        background-clip: padding-box;
+        background-repeat: no-repeat;
+        /*height: 148px;
+        width: 190px;*/
+        min-height: 148px;
+        opacity: 0;
+        position: relative;
+        transition: all 200ms ease;
+
+        .blackout {
+            background-color: rgba(24,25,27,.3);
+            transition: all 200ms ease;
+        }
+
+        &:hover {
+            outline: 4px solid map-get($colors, "cb");
+            transform: scale(1.1);
+            z-index: 9;
+
+            .blackout {
+                background-color: transparent;
+                background: none;
+            }
+        }
+
+        /* Small Devices, Tablets */
+        @media only screen and (max-width : 767px) {
+            min-height: 185px; /*296px;*/
+        }
+
+        &.img2x {
+            /*width: 380px;*/
+        }
+
+        &.img2y {
+            min-height: 296px;
+        }
+
+        @for $i from 1 through 10 {
+            &-#{$i} {
+                background-image: url(../img/carpark/#{$i}.jpg);
+            }
+        }
+    }
+}

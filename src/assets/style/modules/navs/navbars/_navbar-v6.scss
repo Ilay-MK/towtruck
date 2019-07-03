@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+.navbar-v6 {
+    background-color: map-get($colors, "cb");
+    border: 0px solid transparent;
+    border: none;
+    margin-bottom: 0;
+
+    .logo {
+        position: relative;
+        width: 205px;
+
+        /*
+        * 5 утра... ничё в голову другова не приходит толкового...
+        * Передулать нужно как-нить
+        */
+        &-bg {
+            background-color: map-get($colors, "bg1");
+            height: 76px;
+            bottom: 0;
+            position: absolute;
+            right: 60px;
+            top: 0;
+            width: 9999px;
+            z-index: 1;
+        }
+
+        .navbar-brand {
+            background-image: url('../img/header/logo@2x.png');
+            background-repeat: no-repeat;
+            background-size: 220px 76px;
+            background-position: 0 0;
+            color: map-get($colors, "cb");
+            height: 76px;
+            font-family: "HelveticaNeueCyr", "HelveticaNeue";
+            font-size: 22px;
+            letter-spacing: 0.5px;
+            font-weight: 700;
+            padding: 27px 38px;
+            position: relative;
+            text-decoration: underline;
+            text-transform: capitalize;
+            width: 220px;
+            z-index: 9;
+
+            /* Small Devices, Tablets */
+            @media only screen and (max-width : 767px) {
+                font-size: 20px;
+                padding: 29px 15px 25px;
+            }
+
+            img {
+                height: auto;
+            }
+        }
+    }
+
+    .navbar-toggle {
+        margin: 22px 15px 22px 0;
+
+        .icon-bar {
+            background-color: map-get($colors, "cn");
+        }
+    }
+
+    li {
+        margin: 0 3px 12px;
+
+        /* Small Devices, Tablets */
+        @media only screen and (max-width : 767px) {
+            margin: 0 3px;
+        }
+
+        a {
+            /*opacity: 0;*/
+            padding: 32px 12px 12px;
+            /*transform: translate3d(2000px, 0, 0);*/
+            transition: all 300ms ease;
+
+            /* Small Devices, Tablets */
+            @media only screen and (max-width : 767px) {
+                padding: 12px;
+            }
+
+            &:hover, &:focus {
+                background: transparent;
+                color: map-get($colors, "bg1");
+
+                &.phone {
+                    @extend %nav-active;
+                }
+            }
+
+            &.phone {
+                text-decoration: underline;
+            }
+        }
+
+        &.active {
+
+            a {
+                background: transparent;
+                color: map-get($colors, "bg1");
+
+                &.phone {
+                    @extend %nav-active;
+                }
+            }
+        }
+    }
+}

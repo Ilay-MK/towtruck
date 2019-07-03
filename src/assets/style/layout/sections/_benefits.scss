@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+#benefits {
+    @extend %bg-cover;
+    background-image: url(../img/benefits/bg.jpg);
+    padding: 86px 0 71px;
+    position: relative;
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 767px) {
+        padding: 30px 0;
+    }
+
+    .blackout {
+        background-color: rgba(0, 0, 0, 0.6);
+        /*background-image: url(../img/benefits/blackout.jpg);*/ /*img для кроссбраузерности, браузеры не поддерживающие rgba*/
+    }
+
+    .benefit {
+        text-align: left;
+
+        /* Small Devices, Tablets */
+        @media only screen and (max-width : 767px) {
+            margin: 30px auto;
+        }
+
+        .visual {
+            font-size: 20px;
+            letter-spacing: 0.25px;
+            line-height: 24px;
+            margin-bottom: 2px;
+
+            .ico, .ben-title {
+                display: inline-block;
+                vertical-align: baseline;
+            }
+
+            img {
+                height: 44px;
+                margin-right: 6px;
+                vertical-align: baseline;
+                width: 40px;
+            }
+        }
+
+        .desc {
+            font-size: 14px;
+        }
+    }
+
+}

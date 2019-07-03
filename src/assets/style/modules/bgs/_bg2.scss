@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.bg2 {
+    background-color: map-get($colors, "bg2");
+
+    &:hover {
+        background-color: map-get($colors, "bg2_h");
+    }
+}

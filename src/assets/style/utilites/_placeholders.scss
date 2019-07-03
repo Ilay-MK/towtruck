@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+%bg-cover {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+
+// --------------------------------------- //
+
+%nav-active {
+    background-color: map-get($colors, "bg1");
+    color: map-get($colors, "cb");
+}
+
+// --------------------------------------- //
+
+%font-base {
+    font-family: 'ProximaNova', sans-serif;
+}
+
+%font-heading {
+    font-family: 'Roboto', sans-serif;
+    font-variant: normal;
+}

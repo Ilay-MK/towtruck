@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+$color-base                    : #fff;
+$color-navigation              : #252425;
+$color-title                   : #554641;
+
+$background-Burnt_Sienna       : #ea704a;
+$background-Burnt_Sienna-hover : #f5754e;
+$background-My_Sin             : #fea649;
+$background-My_Sin-hover       : #fead4e;
+$background-Fallow             : #ca976c;
+$background-Fallow-hover       : #d49d70;
+$background-Congo_Brown        : #5d4741;
+$background-Congo_Brown-hover  : #664e47;
+
+$color-footer-base             : #c5c5c5;
+$color-footer-heading          : #fea649;
+
+// ------------------------------- //
+
+$c_b     : $color-base;
+$c_n     : $color-navigation;
+$c_t     : $color-title;
+
+$bg_bs   : $background-Burnt_Sienna;
+$bg_bs_h : $background-Burnt_Sienna-hover;
+$bg_ms   : $background-My_Sin;
+$bg_ms_h : $background-My_Sin-hover;
+$bg_f    : $background-Fallow;
+$bg_f_h  : $background-Fallow-hover;
+$bg_cb   : $background-Congo_Brown;
+$bg_cb_h : $background-Congo_Brown-hover;
+
+$c_f_b   : $color-footer-base;
+$c_f_h   : $color-footer-heading;

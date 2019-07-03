@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.modalAlert {
+    color: map-get($colors, "cn");
+
+    .modal-body {
+        padding: 0;
+
+        .alert {
+            margin: 0;
+        }
+    }
+
+}

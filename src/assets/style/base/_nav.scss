@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+nav {
+
+    a {
+        @extend %font-heading;
+        color: map-get($colors, "cn");
+        font-weight: 400;
+        letter-spacing: 0.3px;
+        text-transform: uppercase;
+    }
+}

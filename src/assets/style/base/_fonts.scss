@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/* HelveticaNeueCyr Roman */
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: local('HelveticaNeueCyr Regular'), local('HelveticaNeueCyr-Regular'), local('HelveticaNeueCyr Roman'), local('HelveticaNeueCyr-Roman'),
+        url('../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.eot');
+    src: local('HelveticaNeueCyr Regular'), local('HelveticaNeueCyr-Regular'),
+        url('../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.ttf') format('truetype'),
+        url('../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.svg#HelveticaNeueCyr-Roman') format('svg'),
+        url('../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype');
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+}
+
+/* ProximaNova Regular */
+@font-face {
+    font-family: 'ProximaNova';
+    src: local('ProximaNova Regular'), local('ProximaNova-Regular'),
+        url('../fonts/ProximaNova/ProximaNova-Regular/ProximaNova-Regular.eot');
+    src: local('ProximaNova Regular'), local('ProximaNova-Regular'),
+        url('../fonts/ProximaNova/ProximaNova-Regular/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova/ProximaNova-Regular/ProximaNova-Regular.woff') format('woff'),
+        url('../fonts/ProximaNova/ProximaNova-Regular/ProximaNova-Regular.ttf') format('truetype'),
+        url('../fonts/ProximaNova/ProximaNova-Regular/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg'),
+        url('../fonts/ProximaNova/ProximaNova-Regular/ProximaNova-Regular.eot?#iefix') format('embedded-opentype');
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+}
+
+/* ProximaNova Semibold */
+@font-face {
+    font-family: 'ProximaNova';
+    src: local('ProximaNova Semibold'), local('ProximaNova-Semibold'),
+        url('../fonts/ProximaNova/ProximaNova-Semibold/ProximaNova-Semibold.eot');
+    src: local('ProximaNova Semibold'), local('ProximaNova-Semibold'),
+        url('../fonts/ProximaNova/ProximaNova-Semibold/ProximaNova-Semibold.woff2') format('woff2'),
+        url('../fonts/ProximaNova/ProximaNova-Semibold/ProximaNova-Semibold.woff') format('woff'),
+        url('../fonts/ProximaNova/ProximaNova-Semibold/ProximaNova-Semibold.ttf') format('truetype'),
+        url('../fonts/ProximaNova/ProximaNova-Semibold/ProximaNova-Semibold.svg#ProximaNova-Semibold') format('svg'),
+        url('../fonts/ProximaNova/ProximaNova-Semibold/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    font-weight: 600;
+}
+

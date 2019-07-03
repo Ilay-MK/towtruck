@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+#footer {
+    background-color: map-get($colors, "cn");
+    color: map-get($colors, "cfb");
+    font-size: 18px;
+    padding: 44px 0;
+    position: relative;
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 767px) {
+        padding: 10px 0;
+    }
+
+    .col {
+
+        /* Small Devices, Tablets */
+        @media only screen and (max-width : 767px) {
+            margin: 40px auto;
+        }
+    }
+
+    .footer-content {
+        background-color: #252425;
+        position: relative;
+        z-index: 5;
+    }
+
+    h3 {
+        margin-bottom: 29px;
+
+        /* Small Devices, Tablets */
+        @media only screen and (max-width : 767px) {
+            margin-bottom: 15px;
+        }
+    }
+
+    .ct_b {
+        margin-top: 50px;
+
+        /* Small Devices, Tablets */
+        @media only screen and (max-width : 767px) {
+            margin-top: 20px;
+        }
+
+        p {
+            @extend %font-heading;
+            font-weight: 300;
+            margin: 0 0 3px 0;
+        }
+    }
+
+    .black_line {
+        background-color: #1a191a;
+        height: 73px;
+        position: absolute;
+        right: 0;
+        top: 116px; /*72px;*/
+        width: 50%;
+        z-index: 4;
+
+        /* Small Devices, Tablets */
+        @media only screen and (max-width : 767px) {
+            display: none;
+        }
+    }
+
+    .soc-block {
+        background-color: #1a191a;
+        /*border-radius: 5px 0px 0 5px;*/
+        border-radius: 5px;
+        padding: 22px 20px 14px 20px;
+        margin-top: 72px;
+        /*margin-right: -15px;*/
+
+        /* Small Devices, Tablets */
+        @media only screen and (max-width : 767px) {
+            /*border-radius: 5px;*/
+            margin-top: auto;
+            /*margin-right: auto;*/
+        }
+
+        /* убрано со страницы */
+        .share {
+            /*@extend %bg-cover;*/
+            /*background-image: url(../img/footer/soc/soc.png);*/
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            height: 30px;
+            width: 33px;
+
+            &.facebook {
+                /*background-image: url(../img/footer/soc/f.png);*/
+                background-position: 0 0;
+                margin-right: 6px;
+
+                &:hover {
+                    background-position: -33px 0;
+                }
+            }
+
+            &.googlePlus {
+                /*background-image: url(../img/footer/soc/g.png);*/
+                background-position: 0 -30px;
+                margin-right: 11px;
+
+                &:hover {
+                    background-position: -33px -30px;
+                }
+            }
+
+            &.vk {
+                /*background-image: url(../img/footer/soc/vk.png);*/
+                background-position: 0 -60px;
+
+                &:hover {
+                    background-position: -33px -60px;
+                }
+            }
+        }
+    }
+}

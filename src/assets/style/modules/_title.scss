@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+.title {
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 767px) {
+        margin: auto 5px;
+    }
+
+    h2 {
+        /*margin-left: -3px;*/
+    }
+
+    hr {
+        -moz-border-bottom-colors: none;
+        -moz-border-image: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        border-color: #EEEEEE -moz-use-text-color #FFFFFF;
+        border-style: solid none;
+        border-width: 1px 0;
+        border: none;
+
+        background-color: map-get($colors, "bg2");
+        height: 2px;
+        margin: 14px 0 30px 0px;
+        text-align: left; /*fixed on ie 9*/
+        width: 50px;
+    }
+
+    p {
+        color: map-get($colors, "cn");
+        font-size: 18px;
+        margin: 0 0 36px 0; /* 0 0 36px -1px;*/
+    }
+}

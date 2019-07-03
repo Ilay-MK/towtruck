@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+/* Custom */
+@include placeholder {
+    opacity: 1;
+    text-overflow: ellipsis;
+    text-indent: 0px;
+    transition: text-indent 0.3s ease;
+}
+
+@include plhdr(":focus") {
+    text-indent: 500px;
+    transition: text-indent 0.3s ease;
+}
+
+* {
+    @include box-sizing (border-box);
+    &:before, &:after {
+        @include box-sizing (border-box);
+    }
+}
+
+html {
+    font-size: 24px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100%;
+}
+
+body {
+    @extend %font-base;
+    background-color: map-get($colors, "cb");
+    color: map-get($colors, "cb");
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    display: inline-block;
+    /*text-decoration: none;
+    transition: all 200ms ease;*/
+
+    &:link {
+
+    }
+    &:visited {
+
+    }
+    &:hover {
+
+    }
+    &:active {
+
+    }
+    &:focus {
+        outline: thin dotted;
+        outline: 1px auto -webkit-focus-ring-color;
+        outline: 1px auto map-get($colors, "ct");
+    }
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+figure {
+    margin: 0
+}
+img {
+    vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @extend %font-heading;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 54px;
+    font-weight: 300;
+    letter-spacing: 0.1px;
+    line-height: 1.22em;
+    margin: 0;
+    /*text-shadow: 0 1px 0px rgba(255, 255, 255, 0.9);*/
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 767px) {
+        font-size: 25px;
+    }
+}
+h2 {
+    font-size: 38px;
+    color: map-get($colors, "ct");
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 767px) {
+        font-size: 30px;
+    }
+}
+h3 {
+    font-size: 24px;
+    color: map-get($colors, "bg1");
+}
+h4 {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.25px;
+    margin: 20px 0 14px;
+}
+h5 {
+    font-size: 20px;
+}
+h6 {
+    font-size: 14px;
+}
+
+p {
+    letter-spacing: 0.25px;
+}
+
+section.page {
+
+    section {
+        padding: 114px 0 117px;
+
+        /* Small Devices, Tablets */
+        @media only screen and (max-width : 767px) {
+            padding: 24px 0 67px;
+        }
+    }
+}
+
+// Extras
+// -- Highlight Color Customization
+::-moz-selection {
+    color: #fff;
+    background-color: #000;
+    text-shadow: none;
+}
+
+::selection {
+    color: #fff;
+    background-color: #000;
+    text-shadow: none;
+}
+
+img::selection {
+    color: #fff;
+    background: transparent;
+}
+
+img::-moz-selection {
+    color: #fff;
+    background: transparent;
+}

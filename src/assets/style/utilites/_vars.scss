@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+$colors: (
+    "cb"    : $c_b,     /* #fff */
+    "cn"    : $c_n,     /* #252425 */
+    "ct"    : $c_t,     /* #554641 */
+
+    "bg1"   : $bg_bs,   /* #ea704a */
+    "bg1_h" : $bg_bs_h, /* #f5754e */
+    "bg2"   : $bg_ms,   /* fea649 */
+    "bg2_h" : $bg_ms_h, /* fead4e */
+    "bg3"   : $bg_f,    /* #ca976c */
+    "bg3_h" : $bg_f_h,  /* #d49d70 */
+    "bg4"   : $bg_cb,   /* #5d4741 */
+    "bg4_h" : $bg_cb_h, /* #664e47 */
+
+    "cfb"   : $c_f_b,   /* #c5c5c5 */
+    "cfh"   : $c_f_h    /* #fea649 */
+);
+
+$opacity: 0.2;

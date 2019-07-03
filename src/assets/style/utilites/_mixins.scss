@@ -1,0 +1,87 @@
+@charset "UTF-8";
+// placeholder
+@mixin optional-at-root($sel) {
+    @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+        @content;
+    }
+}
+
+@mixin placeholder {
+    @include optional-at-root('::-webkit-input-placeholder') {
+        @content;
+    }
+    @include optional-at-root(':-moz-placeholder') {
+        @content;
+    }
+    @include optional-at-root('::-moz-placeholder') {
+        @content;
+    }
+    @include optional-at-root(':-ms-input-placeholder') {
+        @content;
+    }
+}
+
+@mixin placeholder_append {
+    @include optional-at-root('&::-webkit-input-placeholder') {
+        @content;
+    }
+    @include optional-at-root('&:-moz-placeholder') {
+        @content;
+    }
+    @include optional-at-root('&::-moz-placeholder') {
+        @content;
+    }
+    @include optional-at-root('&:-ms-input-placeholder') {
+        @content;
+    }
+}
+
+@mixin plhdr($prefix) {
+    @include optional-at-root($prefix+'::-webkit-input-placeholder') {
+        @content;
+    }
+    @include optional-at-root($prefix+':-moz-placeholder') {
+        @content;
+    }
+    @include optional-at-root($prefix+'::-moz-placeholder') {
+        @content;
+    }
+    @include optional-at-root($prefix+':-ms-input-placeholder') {
+        @content;
+    }
+}
+
+@mixin placeholder2 {
+    ::-webkit-input-placeholder {
+        @content
+    }
+    :-moz-placeholder {
+        @content
+    }
+    ::-moz-placeholder {
+        @content
+    }
+    :-ms-input-placeholder {
+        @content
+    }
+}
+
+@mixin background-size ($background-size) {
+    -webkit-background-size: $background-size;
+    -moz-background-size: $background-size;
+    -o-background-size: $background-size;
+    background-size: $background-size;
+}
+
+@mixin box-sizing ($box-sizing) {
+    -webkit-box-sizing: $box-sizing;
+    -moz-box-sizing: $box-sizing;
+    box-sizing: $box-sizing;
+}
+
+@mixin border-image ($image, $border) {
+    -webkit-border-image: url($image) $border;
+    -moz-border-image: url($image) $border;
+    -o-border-image: url($image) $border;
+    border-image: url($image) $border;
+}

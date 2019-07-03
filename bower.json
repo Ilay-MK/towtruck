@@ -1,0 +1,23 @@
+{
+  "name": "tow-truck.by",
+  "description": "Landing. Эвакуация транспорта (увезём.by)",
+  "main": "index.html",
+  "authors": [
+    "Ilya Purouski"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "protonet/jquery.inview": "^1.1.2",
+    "animate.css": "^3.5.1"
+  }
+}

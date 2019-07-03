@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+#services {
+
+    h2 {
+        margin-left: -3px;
+    }
+
+    .col {
+        padding: 3px;
+        overflow: hidden;
+
+        /* Small Devices, Tablets */
+        @media only screen and (max-width : 767px) {
+            padding: 0;
+        }
+
+        &-sm {
+            padding: 0 3px;
+
+            /* Small Devices, Tablets */
+            @media only screen and (max-width : 767px) {
+                padding: 0;
+            }
+        }
+
+        .r {
+            margin: 0 -3px;
+
+            /* Small Devices, Tablets */
+            @media only screen and (max-width : 767px) {
+                margin: 0;
+            }
+        }
+    }
+
+    .tiles {
+
+        .row {
+            /*margin: 0;*/
+        }
+
+        .tile {
+            cursor: pointer;
+            height: 169px;
+            overflow: hidden;
+            margin: 3px auto;
+            position: relative;
+            /*opacity: 0;*/
+
+            /* Small Devices, Tablets */
+            @media only screen and (max-width : 767px) {
+                margin: 1px auto;
+            }
+
+            &:hover {
+                /*animation-name: shake;*/
+            }
+
+            h4 {
+                line-height: 27px;
+                margin: 18px 0 13px 26px;
+            }
+
+            &-lg {
+                height: 344px;
+
+                h4 {
+                    margin-top: 49px;
+                    margin-bottom: 17px;
+
+                    /* Small Devices, Tablets */
+                    @media only screen and (max-width : 767px) {
+                        margin: 18px 0 13px 26px;
+                    }
+                }
+
+                /* Small Devices, Tablets */
+                @media only screen and (max-width : 767px) {
+                    height: 195px;
+                }
+            }
+
+            p {
+                margin-left: 26px;
+
+                &.price {
+                    background-color: rgba(255, 255, 255, $opacity);
+                    font-size: 17px;
+                    display: inline-block;
+                    margin: 0;
+                    padding: 14px 11px 12px;
+                }
+            }
+
+            .arrow {
+                background-repeat: no-repeat;
+                background-image: url(../img/services/arrow.png);
+                background-position: 100% 100%; // навсякий
+                bottom: 19px;
+                font-size: 0; /*fix*/
+                height: 12px;
+                line-height: 0; /*fix*/
+                position: absolute;
+                right: 20px;
+                width: 21px;
+
+                /*a {
+                    background-repeat: no-repeat;
+                    background-image: url(../img/services/arrow.png);
+                    background-position: 100% 100%; // навсякий
+                    height: 12px;
+                    vertical-align: bottom; // fix
+                    width: 21px;
+                }*/
+            }
+        }
+    }
+}

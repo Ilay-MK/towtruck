@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+#header {
+
+    .header-content {
+        @extend %bg-cover;
+        background-image: url(../img/header/bgs/1.jpg);
+        overflow: hidden;
+        position: relative;
+        transition: background 1000ms ease;
+
+        .slider-bg-xs {
+            @extend %bg-cover;
+            background-color: transparent;
+            background-image: url(../img/header/bgs/transparent.png);
+            margin: 0 -15px;
+            padding: 0 30px;
+            overflow: hidden;
+            transition: background 1000ms ease;
+        }
+
+        &-indicators {
+            font-size: 2em;
+            list-style: none;
+            padding: 0;
+            position: absolute;
+            margin: 0 9px 0 0;
+            right: 0;
+            top: 23px;
+            transition: background 500ms ease;
+
+            li {
+                border: 2px solid map-get($colors, "bg2");
+                border-radius: 50%;
+                cursor: pointer;
+                height: 12px;
+                margin: 28px 0;
+                width: 12px;
+
+                &.active {
+                    background-color: map-get($colors, "bg2");
+                }
+
+                /* Small Devices, Tablets */
+                @media only screen and (max-width : 767px) {
+                    display: none;
+                }
+            }
+        }
+
+        .hmar {
+            margin: 100px -15px 107px;
+            position: relative;
+
+            .addsc {
+                font-size: 20px;
+                letter-spacing: 0.25px;
+                margin-top: 17px;
+            }
+
+            /* Small Devices, Tablets */
+            @media only screen and (max-width : 767px) {
+                margin: 90px auto;
+            }
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .col {
+            padding: 7px 30px 30px;
+
+            h4 {
+                margin-bottom: 18px;
+            }
+
+            p {
+                margin-bottom: 22px;
+            }
+
+            &.anim {
+                opacity: 0;
+            }
+        }
+
+        .bg1, .bg1:hover {
+            background-color: map-get($colors, "bg1");
+        }
+
+        .bg2, .bg2:hover {
+            background-color: map-get($colors, "bg2");
+        }
+
+        .bg3, .bg3:hover {
+            background-color: map-get($colors, "bg3");
+        }
+    }
+}

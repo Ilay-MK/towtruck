@@ -1,0 +1,79 @@
+    </section>
+
+    <!-- build:js js/vendor.js -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- FancyBox -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.js"></script>-->
+
+    <!-- bower:js -->
+    <!-- endbower -->
+
+    <!-- endbuild -->
+
+    <!-- build:js js/main.js -->
+    <!-- endbuild -->
+
+    <script>
+        function loadStyle(l) {
+            var a = document.createElement("link");
+            a.rel = "stylesheet";
+            a.type = "text/css";
+            a.href = l;
+            document.getElementsByTagName("head")[0].appendChild(a)
+        }
+
+        function downloadJSAtOnload(l) {
+            var element = document.createElement("script");
+            element.src = l;
+            document.getElementsByTagName("body")[0].appendChild(element)
+        }
+        $(document).ready(function () { /*loadStyle('css/main.css');*/
+            downloadJSAtOnload('assets/js/main.js?v=0.4.10.3');
+        });
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function () {
+                try {
+                    w.yaCounter36791010 = new Ya.Metrika({
+                        id: 36791010,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true,
+                        webvisor: true
+                    });
+                } catch (e) {}
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () {
+                    n.parentNode.insertBefore(s, n);
+                };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else {
+                f();
+            }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/36791010" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<div class="form-order" role="form">
+    <form action="mail.php" class="order" id="formOrder" method="post">
+
+        <!--
+        -- .has-feedback
+        --
+        -- .has-success
+        -- .has-warning
+        -- .has-error
+        -->
+
+        <div class="form-group has-feedback">
+            <label class="control-label sr-only" for="bsName">Имя</label>
+            <input type="text" class="form-control form-control-v9" name="bsName" id="bsName" placeholder="Имя" aria-describedby="bsNameStatus" />
+            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+            <span id="bsNameStatus" class="sr-only">(успех)</span>
+        </div>
+
+        <div class="form-group has-feedback">
+            <label class="control-label sr-only" for="bsPhone">Телефон</label>
+            <input type="tel" class="form-control form-control-v9" name="bsPhone" id="bsPhone" placeholder="Телефон" aria-describedby="bsPhoneStatus" required="required" pattern="[0-9,+,\-,(,), ]*" />
+            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+            <span id="bsPhoneStatus" class="sr-only">(успех)</span>
+        </div>
+
+        <input type="hidden" name="whichService" id="whichService" class="form-control" value="">
+
+        <!--<button type="submit" class="btn btn-v6">Заказать</button>-->
+
+    </form>
+</div>
